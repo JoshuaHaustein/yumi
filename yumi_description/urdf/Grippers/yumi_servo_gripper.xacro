@@ -66,17 +66,18 @@
       <xacro:inertial_cuboid mass="0.04" x_length="0.05" y_length="0.05" z_length="0.05" />
 
       <visual>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <origin xyz="0.012 0 0" rpy="0 0 3.14"/>
         <geometry>
-          <mesh filename="package://yumi_description/meshes/gripper/finger.stl"/>
+          <!-- <mesh filename="package://yumi_description/meshes/gripper/finger.stl"/> -->
+          <mesh filename="package://yumi_description/meshes/gripper/pushing_tool.stl"/>
         </geometry>
         <material name="Blue"/>
       </visual>
 
       <collision>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <origin xyz="0.012 0 0" rpy="0 0 3.14"/>
         <geometry>
-          <mesh filename="package://yumi_description/meshes/gripper/coarse/finger.stl"/>
+          <mesh filename="package://yumi_description/meshes/gripper/pushing_tool.stl"/>
         </geometry>
         <material name="Blue"/>
       </collision>
